@@ -57,6 +57,12 @@ namespace JustGamingEngine { namespace graphics {
 
 		glfwMakeContextCurrent(m_Window);
 		glfwSetWindowSizeCallback(m_Window, windowResize);
+
+		if (glewInit() != GLEW_OK) {
+			std::cout << "Failed initialize GLEW" << std::endl;
+			return false;
+		}
+
 		return true;
 	}
 

@@ -12,19 +12,23 @@ int main(void) {
 
 	glClearColor(0.f, 1.f, 1.f, 1.f);
 
-	std::cout << glGetString(GL_VERSION);
+
+
 
 	while(!window.Closed()){
 		
 		window.Clear();
-
+		
 		glBegin(GL_TRIANGLES);
-
 		glVertex2f(-.5f, -.5f);
 		glVertex2f(0.f, .5f);
 		glVertex2f(.5f, -.5f);
-
 		glEnd();
+
+		
+
+
+
 		window.Update();
 	}
 
