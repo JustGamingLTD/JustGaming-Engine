@@ -80,6 +80,10 @@
     <IncludePath>C:\Users\Jesper\Documents\Visual Studio 2015\Projects\JustGaming Engine\JustGaming Engine\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Jesper\Documents\Visual Studio 2015\Projects\JustGaming Engine\JustGaming Engine\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
